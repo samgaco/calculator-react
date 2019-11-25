@@ -1,3 +1,9 @@
+Deployed to heroku in https://calculatorsam.herokuapp.com/ 
+
+
+-------------------------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
