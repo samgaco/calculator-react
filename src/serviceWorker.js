@@ -13,7 +13,7 @@
 /* eslint-env browser */
 /* eslint no-unused-vars: [1, {"argsIgnorePattern": "evt"}] */
 /* eslint no-use-before-define: ["error", { "classes": false }] */
-/* eslint no-console: "error" */
+/* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 
 
 
