@@ -12,6 +12,8 @@
 
 /* eslint-env browser */
 /* eslint no-unused-vars: [1, {"argsIgnorePattern": "evt"}] */
+/* eslint no-use-before-define: ["error", { "classes": false }] */
+
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost'
