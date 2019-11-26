@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* eslint no-unused-vars: [1, {"argsIgnorePattern": "evt"}] */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* eslint no-unused-vars: [1, {"argsIgnorePattern": "evt"}] */
+
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
