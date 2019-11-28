@@ -14,3 +14,5 @@ class Button extends React.Component {
 }
 
 Button.propTypes = { buttonName: PropTypes.string.isRequired };
+
+export default Button;

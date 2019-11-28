@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="bodyApp">
-        <Display result={0} />
-        <ButtonPanel buttonName="Name" />
+        <Display />
+        <ButtonPanel />
       </div>
     );
   }
@@ -23,3 +23,6 @@ ReactDOM.render(
   <App />,
   document.getElementById('root'),
 );
+
+
+export default App;
