@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -11,6 +12,5 @@ class Button extends React.Component {
     );
   }
 }
-
 
 Button.propTypes = { buttonName: PropTypes.string.isRequired };

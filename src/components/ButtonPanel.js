@@ -37,3 +37,5 @@ class ButtonPanel extends React.Component {
     );
   }
 }
+
+ButtonPanel.defaultProps = { result: '0' };
