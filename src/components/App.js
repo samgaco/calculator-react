@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="bodyApp">
-        <Display />
-        <ButtonPanel />
+        <Display result={0} />
+        <ButtonPanel buttonName="Name" />
       </div>
     );
   }
