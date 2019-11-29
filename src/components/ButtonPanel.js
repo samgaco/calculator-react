@@ -41,4 +41,3 @@ class ButtonPanel extends React.Component {
 ButtonPanel.defaultProps = { result: '0' };
 
 export default ButtonPanel;
-
