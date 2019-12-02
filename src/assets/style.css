@@ -32,6 +32,5 @@ button{
     height: 100px;
     color: white;
     font-weight: bold;
-    padding: 2%;
-    text-align: right;
+    padding: 2% 2% 2% 90%;
 }
