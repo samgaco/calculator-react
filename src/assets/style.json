@@ -1,0 +1,10 @@
+{
+    "color": {
+      "grey": "#ddd",
+      "orange": "#ff8c00"
+    },
+    "buttonWidth": {
+      "normal": "25%",
+      "wide": "50%"
+    }
+  }
