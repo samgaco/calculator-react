@@ -1,36 +1,35 @@
-.bodyApp{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 700px;
+.bodyApp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 700px;
 }
 
-.button{
-    display: flex;
+.button {
+  display: flex;
 }
 
-button{
-    width: 25%;
-    text-align: center;
-    color: black;
-    border: 1px solid black;
-    background:#ff8c00;
-
+button {
+  width: 25%;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  background: #ff8c00;
 }
 
-#btn-0{
-    width: 75%;
+#btn-0 {
+  width: 75%;
 }
 
-.gbutton{
-    height: 100px;
+.gbutton {
+  height: 100px;
 }
 
-.display{
-    display: flex;
-    background: grey;
-    height: 100px;
-    color: white;
-    font-weight: bold;
-    padding: 2% 2% 2% 90%;
+.display {
+  display: flex;
+  background: grey;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  padding: 2% 2% 2% 90%;
 }
