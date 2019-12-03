@@ -1,6 +1,6 @@
 {
-    "color": {
-      "grey": "#ddd",
+    "colorPal": {
+      "grey": "#d9dad8",
       "orange": "#ff8c00"
     },
     "buttonWidth": {

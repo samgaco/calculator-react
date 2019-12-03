@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import style from '../assets/style.json';
 
 const whatStyle = (color, wide) => ({
-  background: color,
+  background: color === 'grey' ? style.colorPal.grey : style.colorPal.orange,
   width: wide ? style.buttonWidth.wide : style.buttonWidth.normal,
 });
 
@@ -25,6 +25,6 @@ Button.propTypes = {
   wide: PropTypes.bool,
 };
 
-Button.defaultProps = { color: style.color.orange, wide: false };
+Button.defaultProps = { color: style.colorPal.orange, wide: false };
 
 export default Button;

@@ -7,32 +7,33 @@ class ButtonPanel extends React.Component {
     return (
       <div>
         <div className="gbutton group-1">
-          <Button buttonName="AC" />
-          <Button buttonName="+/-" />
-          <Button buttonName="%" />
+          <Button buttonName="AC" color="grey" />
+          <Button buttonName="+/-" color="grey" />
+          <Button buttonName="%" color="grey" />
           <Button buttonName="÷" />
         </div>
         <div className="gbutton group-2">
-          <Button buttonName="7" />
-          <Button buttonName="8" />
-          <Button buttonName="9" />
+          <Button buttonName="7" color="grey" />
+          <Button buttonName="8" color="grey" />
+          <Button buttonName="9" color="grey" />
           <Button buttonName="X" />
         </div>
         <div className="gbutton group-3">
-          <Button buttonName="4" />
-          <Button buttonName="5" />
-          <Button buttonName="6" />
+          <Button buttonName="4" color="grey" />
+          <Button buttonName="5" color="grey" />
+          <Button buttonName="6" color="grey" />
           <Button buttonName="-" />
         </div>
         <div className="gbutton group-4">
-          <Button buttonName="1" />
-          <Button buttonName="2" />
-          <Button buttonName="3" />
+          <Button buttonName="1" color="grey" />
+          <Button buttonName="2" color="grey" />
+          <Button buttonName="3" color="grey" />
           <Button buttonName="+" />
         </div>
         <div className="gbutton group-5">
           <Button buttonName="0" color="grey" wide />
-          <Button buttonName="." />
+          <Button buttonName="." color="grey" />
+          <Button buttonName="=" />
         </div>
       </div>
     );
