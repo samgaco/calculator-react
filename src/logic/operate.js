@@ -16,7 +16,11 @@ function operate(numberOne, numberTwo, operation) {
       result = 0;
       break;
     case '÷':
-      result = nOne / nTwo;
+      if (nTwo !== 0) {
+        result = nOne / nTwo;
+      } else {
+        result = 'ERROR: not possible to divide by 0';
+      }
       break;
     case '%':
       result = nOne % nTwo;
