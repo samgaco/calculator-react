@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 // eslint-disable-next-line no-unused-vars
-import calculate from './logic/calculate';
+import calculate from '../logic/calculate';
 
 
 class App extends React.Component {
