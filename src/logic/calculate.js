@@ -1,3 +1,5 @@
+import operate from './operate'
+
 function calculate(calculatorData, buttonName) {
   let { total, next, operation } = calculatorData;
 
@@ -5,9 +7,10 @@ function calculate(calculatorData, buttonName) {
     case '+/-':
       total = -total;
       next = -next;
-      operation = -operation;
+      operation = buttonName;
       break;
     default:
+      operate(total, next, buttonName);
       break;
   }
 

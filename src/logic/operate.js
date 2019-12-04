@@ -5,16 +5,24 @@ function operate(numberOne, numberTwo, operation) {
   const nTwo = Big(numberTwo);
   let result = 0;
 
-  if (operation === '+') {
-    result = nOne + nTwo;
-  } else if (operation === '-') {
-    result = nOne + nTwo;
-  } else if (operation === 'X') {
-    result = nOne * nTwo;
-  } else if (operation === '÷') {
-    result = nOne / nTwo;
-  } else if (operation === 'AC') {
-    result = 0;
+  switch (operation) {
+    case '+':
+      result = nOne + nTwo;
+      break;
+    case '-':
+      result = nOne - nTwo;
+      break;
+    case 'AC':
+      result = 0;
+      break;
+    case '÷':
+      result = nOne / nTwo;
+      break;
+    case '%':
+      result = nOne % nTwo;
+      break;
+    default:
+      break;
   }
 
 
