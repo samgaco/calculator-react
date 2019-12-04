@@ -4,7 +4,7 @@
     React Project
     <br />
     <br />
-    <a href="https://rawcdn.githack.com/samgaco/todolist/4c009a1851daeb5401494aabbd50beccec54308f/dist/index.html">View Demo</a>
+    <a href="">View Demo</a>
     ·
     <a href="#">Report Bug</a>
     ·
@@ -18,6 +18,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
+  * [Deployment](#Deployment)
 * [Contact](#Contact)
 
 
@@ -30,6 +31,22 @@ This is a simple project made with learning purposes. The goal is to create a Ca
 The work done so far can be seen in the following url:
 
 Deployed to heroku in https://calculatorsam.herokuapp.com/ 
+
+### Deployment
+
+Clone the repository to your working environment.
+
+```
+git clone git@github.com:samgaco/calculator-react.git
+```
+
+Run the project on a local server
+
+```
+npm start
+```
+
+
 
 ### Built With
 * [React](https://reactjs.org/)
