@@ -10,7 +10,7 @@ function calculate(calculatorData, buttonName) {
       operation = buttonName;
       break;
     default:
-      operate(total, next, buttonName);
+      total = operate(total, next, buttonName);
       break;
   }
 
