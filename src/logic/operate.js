@@ -21,6 +21,9 @@ function operate(numberOne, numberTwo, operation) {
     case '%':
       result = nOne % nTwo;
       break;
+    case '.':
+      result = nOne.nTwo;
+      break;
     default:
       break;
   }
