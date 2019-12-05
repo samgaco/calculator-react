@@ -11,9 +11,15 @@ const whatStyle = (color, wide) => ({
 });
 
 class Button extends React.Component {
+  // eslint-disable-next-line no-unused-vars
+  handleClick(buttonName) {
+    // eslint-disable-next-line react/prop-types
+    return this.props.clickHandler;
+  }
+
   render() {
     return (
-      <button type="button" style={whatStyle(this.props.color, this.props.wide)} id={`btn-${this.props.buttonName}`}>
+      <button onClick={this.handleClick} type="button" style={whatStyle(this.props.color, this.props.wide)} id={`btn-${this.props.buttonName}`}>
         {this.props.buttonName}
       </button>
     );
