@@ -1,4 +1,4 @@
-import Big from 'big.js';
+const Big = require('big.js');
 
 function operate(numberOne, numberTwo, operation) {
   const nOne = Big(numberOne);
