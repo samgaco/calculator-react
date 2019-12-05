@@ -1,39 +1,56 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import Button from './Button';
 
 class ButtonPanel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(buttonName) {
+    return this.props.clickHandler;
+  }
+
   render() {
     return (
       <div>
         <div className="gbutton group-1">
-          <Button buttonName="AC" color="grey" />
-          <Button buttonName="+/-" color="grey" />
-          <Button buttonName="%" color="grey" />
-          <Button buttonName="÷" />
+          <Button clickHandler={this.handleClick} buttonName="AC" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="+/-" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="%" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="÷" />
         </div>
         <div className="gbutton group-2">
-          <Button buttonName="7" color="grey" />
-          <Button buttonName="8" color="grey" />
-          <Button buttonName="9" color="grey" />
-          <Button buttonName="X" />
+          <Button clickHandler={this.handleClick} buttonName="7" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="8" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="9" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="X" />
         </div>
         <div className="gbutton group-3">
-          <Button buttonName="4" color="grey" />
-          <Button buttonName="5" color="grey" />
-          <Button buttonName="6" color="grey" />
-          <Button buttonName="-" />
+          <Button clickHandler={this.handleClick} buttonName="4" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="5" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="6" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="-" />
         </div>
         <div className="gbutton group-4">
-          <Button buttonName="1" color="grey" />
-          <Button buttonName="2" color="grey" />
-          <Button buttonName="3" color="grey" />
-          <Button buttonName="+" />
+          <Button clickHandler={this.handleClick} buttonName="1" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="2" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="3" color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="+" />
         </div>
         <div className="gbutton group-5">
-          <Button buttonName="0" color="grey" wide />
-          <Button buttonName="." color="grey" />
-          <Button buttonName="=" />
+          <Button clickHandler={this.handleClick} buttonName="0" color="grey" wide />
+          <Button clickHandler={this.handleClick} buttonName="." color="grey" />
+          <Button clickHandler={this.handleClick} buttonName="=" />
         </div>
       </div>
     );
