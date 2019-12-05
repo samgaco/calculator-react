@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
@@ -16,6 +17,7 @@ class ButtonPanel extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  // eslint-disable-next-line no-unused-vars
   handleClick(buttonName) {
     return this.props.clickHandler;
   }
