@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 700px;
+  margin: auto;
 }
 
 .button {
@@ -16,6 +17,7 @@ button {
   color: black;
   border: 1px solid rgb(175, 175, 175);
   background: #ff8c00;
+  font-size: 1.6rem;
 }
 
 #btn-0 {
