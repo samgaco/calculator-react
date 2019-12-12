@@ -19,7 +19,7 @@ class ButtonPanel extends React.Component {
 
   // eslint-disable-next-line no-unused-vars
   handleClick(buttonName) {
-    return this.props.clickHandler;
+    this.props.clickHandler(buttonName);
   }
 
   render() {

@@ -19,7 +19,7 @@ class Button extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick} type="button" style={whatStyle(this.props.color, this.props.wide)} id={`btn-${this.props.buttonName}`}>
+      <button onClick={this.handleClick(this.props.buttonName)} type="button" style={whatStyle(this.props.color, this.props.wide)} id={`btn-${this.props.buttonName}`}>
         {this.props.buttonName}
       </button>
     );
