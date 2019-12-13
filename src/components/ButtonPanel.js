@@ -35,7 +35,7 @@ class ButtonPanel extends React.Component {
           <Button clickHandler={this.handleClick} buttonName="7" color="grey" />
           <Button clickHandler={this.handleClick} buttonName="8" color="grey" />
           <Button clickHandler={this.handleClick} buttonName="9" color="grey" />
-          <Button clickHandler={this.handleClick} buttonName="X" />
+          <Button clickHandler={this.handleClick} buttonName="x" />
         </div>
         <div className="gbutton group-3">
           <Button clickHandler={this.handleClick} buttonName="4" color="grey" />
