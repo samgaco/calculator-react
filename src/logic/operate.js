@@ -7,7 +7,6 @@ export default function operate(numberOne, numberTwo, operation) {
   const number2 = Big(numberTwo);
   switch (operation) {
     case '+':
-      console.log("entra")
       return number1.plus(number2).toString();
     case '-':
       return number1.minus(number2).toString();

@@ -23,8 +23,7 @@ class App extends React.Component {
   }
 
   handleClick(buttonName) {
-    console.log(buttonName);
-    const operatorReturn = ['+/-', 'AC'];
+    const operatorReturn = ['+/-', 'AC', '.'];
     if (buttonName === operatorReturn.filter((operator) => operator === buttonName)[0]) {
       const total = calculate(this.state, buttonName);
       this.setState({
@@ -32,34 +31,38 @@ class App extends React.Component {
         next: false,
         operation: false,
       });
-    }
+      if (buttonName === '.' && this.state.next === null) {
+        this.setState({
+          operation: '.',
+        });
+      }
+    } else {
+      const operatorSigns = ['+', '-', 'x', '÷', '%'];
+      if (buttonName === operatorSigns.filter((operator) => operator === buttonName)[0]) {
+        this.setState({
+          operation: buttonName,
+        });
+      } else if ((this.state.operation === false)) {
+        this.setState({ total: buttonName });
+      } else if ((this.state.operation !== false)) {
+        this.setState({ next: buttonName });
+      }
 
-    const operatorSigns = ['+', '-', 'x', '÷', '%', '.'];
-    console.log(operatorSigns.filter((operator) => operator === buttonName)[0]);
-    if (buttonName === operatorSigns.filter((operator) => operator === buttonName)[0]) {
-      console.log('enter operator');
-      this.setState({
-        operation: buttonName,
-      });
-    } else if ((this.state.operation === false)) {
-      this.setState({ total: buttonName });
-    } else if ((this.state.operation !== false)) {
-      this.setState({ next: buttonName });
-    }
-    if (buttonName === '=') {
-      if ((this.state.next !== false && this.state.operation !== false)) {
-        const total = calculate(this.state, buttonName);
-        this.setState({
-          total,
-          next: false,
-          operation: false,
-        });
-      } else {
-        this.setState({
-          total: this.state.total,
-          next: false,
-          operation: false,
-        });
+      if (buttonName === '=') {
+        if ((this.state.next !== false && this.state.operation !== false)) {
+          const total = calculate(this.state, buttonName);
+          this.setState({
+            total,
+            next: false,
+            operation: false,
+          });
+        } else {
+          this.setState({
+            total: this.state.total,
+            next: false,
+            operation: false,
+          });
+        }
       }
     }
   }
@@ -67,9 +70,7 @@ class App extends React.Component {
 
   render() {
     const { total, next } = this.state;
-    console.log('en render this state==>', this.state);
     const displayValue = total ? (next ? next.toString() : total.toString()) : '0';
-    console.log(displayValue);
     return (
       <div className="bodyApp">
         <Display result={displayValue} />

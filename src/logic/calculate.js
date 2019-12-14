@@ -15,10 +15,17 @@ function calculate(calculatorData, buttonName) {
       return total;
       break;
     case 'AC':
-      console.log("gets here")
       total = 0;
       return total;
       break;
+    case '.':
+      if (next !== false) {
+        total = [total, '.', next].join('');
+        return total;
+        break;
+      }
+      return total;
+    // eslint-disable-next-line no-fallthrough
     default:
       const result = operate(total, next, operation);
       return result;
