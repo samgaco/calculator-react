@@ -24,7 +24,7 @@ class App extends React.Component {
 
   handleClick(buttonName) {
     const operatorReturn = ['+/-', 'AC', '.'];
-    if (buttonName === operatorReturn.filter((operator) => operator === buttonName)[0]) {
+    if (buttonName === operatorReturn.filter(operator => operator === buttonName)[0]) {
       const total = calculate(this.state, buttonName);
       this.setState({
         total,
@@ -38,7 +38,7 @@ class App extends React.Component {
       }
     } else {
       const operatorSigns = ['+', '-', 'x', '÷', '%'];
-      if (buttonName === operatorSigns.filter((operator) => operator === buttonName)[0]) {
+      if (buttonName === operatorSigns.filter(operator => operator === buttonName)[0]) {
         this.setState({
           operation: buttonName,
         });
