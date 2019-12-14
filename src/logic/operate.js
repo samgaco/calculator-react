@@ -1,10 +1,17 @@
+/* eslint-disable no-var */
+/* eslint-disable vars-on-top */
 /* eslint-disable consistent-return */
 /* eslint-disable no-alert */
 const Big = require('big.js');
 
 export default function operate(numberOne, numberTwo, operation) {
-  const number1 = Big(numberOne);
-  const number2 = Big(numberTwo);
+  try {
+    var number1 = Big(numberOne);
+    var number2 = Big(numberTwo);
+  } catch (e) {
+    return 0;
+  }
+
   switch (operation) {
     case '+':
       return number1.plus(number2).toString();
