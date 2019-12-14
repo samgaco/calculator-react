@@ -1,3 +1,4 @@
+/* eslint-disable block-scoped-var */
 /* eslint-disable no-var */
 /* eslint-disable vars-on-top */
 /* eslint-disable consistent-return */
