@@ -1,39 +1,31 @@
+/* eslint-disable block-scoped-var */
+/* eslint-disable no-var */
+/* eslint-disable vars-on-top */
+/* eslint-disable consistent-return */
+/* eslint-disable no-alert */
 const Big = require('big.js');
 
-function operate(numberOne, numberTwo, operation) {
-  const nOne = Big(numberOne);
-  const nTwo = Big(numberTwo);
-  let result = 0;
+export default function operate(numberOne, numberTwo, operation) {
+  try {
+    var number1 = Big(numberOne);
+    var number2 = Big(numberTwo);
+  } catch (e) {
+    return 0;
+  }
 
   switch (operation) {
     case '+':
-      result = nOne + nTwo;
-      break;
+      return number1.plus(number2).toString();
     case '-':
-      result = nOne - nTwo;
-      break;
-    case 'AC':
-      result = 0;
-      break;
+      return number1.minus(number2).toString();
+    case 'x':
+      return number1.times(number2).toString();
     case '÷':
-      if (nTwo !== 0) {
-        result = nOne / nTwo;
-      } else {
-        result = 'ERROR: not possible to divide by 0';
-      }
+      if (numberTwo === '0') { alert('Division by Zero unauthorized'); } else { return number1.div(number2).toString(); }
       break;
     case '%':
-      result = nOne % nTwo;
-      break;
-    case '.':
-      result = nOne.nTwo;
-      break;
+      return number1.mod(number2).toString();
     default:
-      break;
+      alert(`operation '${operation}' not available `);
   }
-
-
-  return result;
 }
-
-export default operate;
